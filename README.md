@@ -17,6 +17,8 @@ Technologies used:
 
 Live URL:
 
+https://trevorwiegand92.github.io/Take-Some-Notes/
+
 Github URL:
 
 https://github.com/trevorwiegand92/Take-Some-Notes
