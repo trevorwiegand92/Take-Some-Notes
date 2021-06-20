@@ -13,7 +13,7 @@ app.use(express.static("public"));
 
 //routes for the html pages.//
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, './public/index.html')));
-app.get('/', (req, res) => res.sendFile(path.join(dir__name, './public/notes.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, './public/notes.html')));
 
 
 //route to get the database of saved notes.//
@@ -22,7 +22,7 @@ app.get('/api/notes', (req, res) => {
         if (err) throw err;
         res.json(JSON.parse(data))
     })
-})
+});
 
 //lets the user post new notes and save to the database.//
 app.post('/api/notes', (req, res) => {
@@ -38,7 +38,19 @@ app.post('/api/notes', (req, res) => {
             res.json(parseData)
         })
     })
-})
+});
+
+// Deletes note from database by its unique ID
+app.delete('/api/notes/:id', (req, res) => {
+    fs.readFile("./db/db.json", (err, data) => {
+        if (err) throw err;
+        const noteArr = JSON.parse(data).filter((note) => note.id !== req.params.id);
+        fs.writeFile("./db/db.json", JSON.stringify(noteArr), err => {
+            if (err) throw err;
+            res.json(data)
+        });
+    })
+});
 
 
 //lets the user know that the server is working and listening on the specific port.//

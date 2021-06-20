@@ -1,0 +1,25 @@
+{
+  "name": "Take-Some-Notes",
+  "version": "1.0.0",
+  "description": "Finished homework assignment for week 11: Note Taker Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorwiegand92/Take-Some-Notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevorwiegand92/Take-Some-Notes/issues"
+  },
+  "homepage": "https://github.com/trevorwiegand92/Take-Some-Notes#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uniqid": "^5.3.0"
+  }
+}
