@@ -28,4 +28,3 @@ Screenshots:
 
 ![Here's a screenshot of the finished index page.](./images/take_some_notes_screenshot2.png)
 
-![Here's a screenshot of the finished index page.](./images/take_some_notes_screenshot3.png)
