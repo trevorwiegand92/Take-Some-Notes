@@ -17,7 +17,7 @@ Technologies used:
 
 Live URL:
 
-https://trevorwiegand92.github.io/Take-Some-Notes/
+https://take-some-notes-trevorwiegand.herokuapp.com/
 
 Github URL:
 
